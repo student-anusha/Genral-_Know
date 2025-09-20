@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> GK Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Home Page -->
+  <div id="home-page">
+    <h1>📜सामान्य ज्ञान 📰</h1>
+    
+     <!-- Name in top-right corner -->
+  <div class="name-tag"> - त्रिगुणसेन पंडित, वरिष्ठ अनुवाद अधिकारी </div>
+
+    <div class="circle-container">
+      <div class="circle" onclick="openQuestion(1)">1</div>
+      <div class="circle" onclick="openQuestion(2)">2</div>
+      <div class="circle" onclick="openQuestion(3)">3</div>
+      <div class="circle" onclick="openQuestion(4)">4</div>
+      <div class="circle" onclick="openQuestion(5)">5</div>
+      <div class="circle" onclick="openQuestion(6)">6</div>
+      <div class="circle" onclick="openQuestion(7)">7</div>
+      <div class="circle" onclick="openQuestion(8)">8</div>
+      <div class="circle" onclick="openQuestion(9)">9</div>
+      <div class="circle" onclick="openQuestion(10)">10</div>
+      <div class="circle" onclick="openQuestion(11)">11</div>
+      <div class="circle" onclick="openQuestion(12)">12</div>
+      <div class="circle" onclick="openQuestion(13)">13</div>
+      <div class="circle" onclick="openQuestion(14)">14</div>
+      <div class="circle" onclick="openQuestion(15)">15</div>
+      <div class="circle" onclick="openQuestion(16)">16</div>
+    </div>
+  </div>
+
+  <!-- Question Page -->
+  <div id="question-page" class="question-page">
+    <div class="question-text" id="question-text"></div>
+    <button class="btn answer-btn" onclick="showAnswer()">ANS</button>
+    <div class="answer" id="answer-text"></div>
+    <br>
+    <button class="btn close-btn" onclick="closeQuestion()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

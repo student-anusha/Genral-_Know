@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eae4ff;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px;
+}
+
+.name-tag {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(186, 0, 0);   /* 🔴 Name in red */
+}
+
+/* Circle layout */
+.circle-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 60px;
+  justify-items: center;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #1dbff1;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.circle.visited {
+  background: rgba(253, 75, 30, 0.4);
+}
+
+/* Question page */
+.question-page {
+  display: none;
+  padding: 50px;
+}
+
+.question-text {
+  font-size: 69px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.answer-btn {
+  background: #27ae60;
+  color: white;
+}
+
+.close-btn {
+  background: #e74c3c;
+  color: white;
+  display: none;
+}
+
+/* Answer animation */
+.answer {
+  font-size: 39px;
+  margin-top: 20px;
+  color: #000000;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+
+.answer.show {
+  opacity: 1;
+  transform: translateX(0);
+}
